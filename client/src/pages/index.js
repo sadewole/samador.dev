@@ -1,10 +1,10 @@
 import React, { Fragment } from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/HeroImage"
 import SEO from "../components/seo"
-import { fa } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 
 export const query = graphql`
   query {
@@ -25,6 +25,13 @@ export const query = graphql`
   }
 `
 
+const icons = [{ icon: FaTwitter }, { icon: FaGithub }, { icon: FaLinkedin }]
+
+const links = [
+  { to: "#", text: "About me" },
+  { to: "#", text: "Blog" },
+]
+
 const IndexPage = ({ data }) => (
   <Fragment>
     <SEO title="Home" />
@@ -35,9 +42,34 @@ const IndexPage = ({ data }) => (
           <h1 className="md:text-5xl text-3xl mb-2 leading-normal font-semibold text-white">
             Samuel Adewole
           </h1>
-          <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-500">
-            Software engineer, Vezeti
+          <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-300">
+            Software engineer, Vezeti.
           </p>
+          {/** Social links */}
+          <ul>
+            {icons.map(({ icon: Icon }, index) => (
+              <li
+                key={index}
+                className="text-white hover:border-gray-600 border-white border p-3 mr-2 text-center inline-flex items-center justify-center w-10 h-10 mb-6 shadow-lg rounded-full hover:bg-white hover:text-gray-600 cursor-pointer"
+              >
+                <Icon />
+              </li>
+            ))}
+          </ul>
+          {/** Portfolio Links */}
+          <ul>
+            {links.map((link, index) => (
+              <li key={index} className="text-gray-300">
+                -{" "}
+                <Link
+                  to={link.to}
+                  className="hover:underline font-light leading-snug mr-2"
+                >
+                  {link.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative hidden md:block">
           <Image data={data} />

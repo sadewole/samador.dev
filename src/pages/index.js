@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/HeroImage"
 import SEO from "../components/seo"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa"
 
 export const query = graphql`
   query {
@@ -25,7 +25,12 @@ export const query = graphql`
   }
 `
 
-const icons = [{ icon: FaTwitter }, { icon: FaGithub }, { icon: FaLinkedin }]
+const icons = [
+  { icon: FaTwitter },
+  { icon: FaGithub },
+  { icon: FaLinkedin },
+  { icon: FaEnvelope },
+]
 
 const links = [
   { to: "#", text: "About me" },

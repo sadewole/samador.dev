@@ -23,8 +23,8 @@ module.exports = {
         name: `samador-portfolio`,
         short_name: `samador`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#374151`,
+        theme_color: `#374151`,
         display: `minimal-ui`,
         icon: `src/assets/images/photo2.jpg`, // This path is relative to the root of the site.
       },

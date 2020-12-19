@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Samador porfolio`,
+    title: `Samador`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@samador9`,
   },
@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `samador-portfolio`,
+        name: `samador`,
         short_name: `samador`,
         start_url: `/`,
         background_color: `#374151`,

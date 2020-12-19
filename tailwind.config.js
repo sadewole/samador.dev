@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class' or false
   theme: {
     extend: {
       minHeight: {
@@ -62,7 +62,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      textOpacity: ["dark"],
+    },
   },
   plugins: [],
 }

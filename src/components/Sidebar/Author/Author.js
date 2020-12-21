@@ -1,22 +1,8 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 import Image from "../../../assets/images/photo2.jpg"
 
-const query = graphql`
-  {
-    file(relativePath: { eq: "photo2.jpg" }) {
-      childImageSharp {
-        fixed(height: 150, width: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`
-
 const Author = ({ author }) => {
-  const { file } = useStaticQuery(query)
   return (
     <div className="mb-4">
       <Link to="/">

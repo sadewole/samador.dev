@@ -1,8 +1,13 @@
+const siteConfig = require("./config")
+
 module.exports = {
   siteMetadata: {
-    title: `Samador`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@samador9`,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    menu: siteConfig.menu,
+    copyright: siteConfig.copyright,
+    author: siteConfig.author,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `samador`,
-        short_name: `samador`,
+        name: siteConfig.title,
+        short_name: siteConfig.title,
         start_url: `/`,
         background_color: `#374151`,
         theme_color: `#374151`,

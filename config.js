@@ -22,7 +22,7 @@ module.exports = {
   author: {
     name: "Samuel Adewole",
     jobTitle: "Software engineer, Vezeti",
-    photo: "/assets/images/photo2.jpg",
+    photo: "/photo2.jpg",
     bio:
       "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
     contacts: {

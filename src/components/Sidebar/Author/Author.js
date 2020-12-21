@@ -1,25 +1,40 @@
 import React from "react"
-import { withPrefix, Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import Image from "../../../assets/images/photo2.jpg"
+
+const query = graphql`
+  {
+    file(relativePath: { eq: "photo2.jpg" }) {
+      childImageSharp {
+        fixed(height: 150, width: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 const Author = ({ author }) => {
+  const { file } = useStaticQuery(query)
   return (
     <div className="mb-4">
       <Link to="/">
         <img
-          src={withPrefix(author.photo)}
+          src={Image}
+          width="85"
+          height="85"
           className="rounded"
-          width="75"
-          height="75"
           alt={author.name}
         />
       </Link>
-      (
-      <h2 className="text-3xl mb-2 leading-normal font-semibold text-white">
+      <div></div>
+      <h2 className="text-2xl mb-2 leading-normal font-semibold text-white">
         <Link className="" to="/">
           {author.name}
         </Link>
       </h2>
-      <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-300">
+      <p className="text-sm font-light leading-relaxed mt-0 mb-4 text-gray-300">
         {author.bio}
       </p>
     </div>

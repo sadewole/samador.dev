@@ -1,9 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { globalHistory } from "@reach/router"
 
 const Menu = ({ menu }) => {
-  const pathname = window.location.pathname
+  const pathname = globalHistory.location.pathname
   let links =
     pathname === "/" ? menu.filter(item => item.label !== "Home") : menu
 

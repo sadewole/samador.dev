@@ -1,13 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
-import Image from "../../../assets/images/photo2.jpg"
+import { withPrefix, Link } from "gatsby"
 
 const Author = ({ author }) => {
   return (
     <div className="mb-4">
       <Link to="/">
         <img
-          src={Image}
+          src={withPrefix(author.photo)}
           width="85"
           height="85"
           className="rounded"

@@ -5,4 +5,4 @@
  */
 
 // You can delete this file if you're not using it
-import "./src/assets/styles/tailwind.css"
+import "./static/styles/tailwind.css"

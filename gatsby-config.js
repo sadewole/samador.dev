@@ -36,7 +36,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-offline",
+      resolve: "gatsby-plugin-remove-serviceworker",
       //   options: {
       //     workboxConfig: {
       //       importWorkboxFrom: `cdn`,

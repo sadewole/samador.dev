@@ -36,7 +36,12 @@ const IndexPage = ({ data }) => {
       <section className="relative py-10 bg-gray-700 dark:bg-gray-900 m-0 overflow-hidden h-screen">
         <div className="container h-full mx-auto flex items-center justify-center">
           <div className="w-full px-14 z-3">
-            <h3 className="leading-snug text-white font-light">Hi, I'm ⛷️</h3>
+            <h3 className="leading-snug text-white font-light">
+              Hi, I'm{" "}
+              <span role="img" aria-label="emoji">
+                ⛷️
+              </span>
+            </h3>
             <h1 className="md:text-5xl text-3xl mb-2 leading-normal font-semibold text-white">
               {author.name}
             </h1>

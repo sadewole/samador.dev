@@ -39,6 +39,7 @@ module.exports = {
       resolve: "gatsby-plugin-offline",
       options: {
         workboxConfig: {
+          importWorkboxFrom: `cdn`,
           runtimeCaching: [
             {
               // Use cacheFirst since these don't need to be revalidated (same RegExp

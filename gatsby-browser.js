@@ -9,7 +9,7 @@ import "./static/styles/tailwind.css"
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/sw.js")
+    .register("./sw.js")
     .then(function (registration) {
       // registration worked
       console.log("Registration succeeded.")

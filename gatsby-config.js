@@ -35,8 +35,8 @@ module.exports = {
         icon: `static/images/photo2.jpg`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-remove-serviceworker",
+    // {
+    //   resolve: "gatsby-plugin-remove-serviceworker",
       //   options: {
       //     workboxConfig: {
       //       importWorkboxFrom: `cdn`,
@@ -66,6 +66,6 @@ module.exports = {
       //       ],
       //     },
       //   },
-    },
+    // },
   ],
 }

@@ -59,6 +59,9 @@ module.exports = {
       backgroundSize: {
         full: "100$",
       },
+      // transform: {
+      //   "scale-2": "scale(1.2)",
+      // },
     },
   },
   variants: {

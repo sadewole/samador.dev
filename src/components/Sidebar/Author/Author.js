@@ -9,7 +9,7 @@ const Author = ({ author }) => {
           src={withPrefix(author.photo)}
           width="85"
           height="85"
-          className="rounded"
+          className="rounded transform hover:scale-105"
           alt={author.name}
         />
       </Link>

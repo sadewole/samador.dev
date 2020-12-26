@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: About me
 slug: about
 draft: true
 ---
@@ -12,11 +12,9 @@ More...✨
 
 * I’m a friendly person and I also respect people’s views.
 * Not the perfect guy but try to ensure things look better.
-* I’m a community lover and it gives me joy seeing people grow
-* I love learning and try as much as possible to do the thing that makes me better than my yesterday.
+* I’m a community lover and it gives me joy seeing people grow.
+* I love learning and try as much as possible to do the thing that makes me better than yesterday.
 * And yeah, I love watching movies😉. It's more like the best way I entertain myself.
-
-
 
 
 
@@ -25,7 +23,7 @@ More...✨
 * Leadership
 * Communication
 * Team spirit
-* Organizing community event
+* Organizing dev-community events
 * React
 * Vue
 * Python
@@ -33,8 +31,6 @@ More...✨
 * Django (familiar knowledge)
 * Nodejs
 * Docker
-
-
 
 
 

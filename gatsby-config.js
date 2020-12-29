@@ -21,6 +21,20 @@ module.exports = {
         path: `${__dirname}/static/images/`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/media`,
+        name: "media",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/pages`,
+        name: "pages",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -33,6 +47,30 @@ module.exports = {
         theme_color: `#374151`,
         display: `minimal-ui`,
         icon: `static/images/photo2.jpg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960,
+              withWebp: true,
+            },
+          },
+          // {
+          //   resolve: "gatsby-remark-responsive-iframe",
+          //   options: { wrapperStyle: "margin-bottom: 1.0725rem" },
+          // },
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-prismjs",
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
+          "gatsby-remark-external-links",
+        ],
       },
     },
     // {

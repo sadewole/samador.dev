@@ -8,7 +8,7 @@ import Author from "./Author"
 const Sidebar = () => {
   const { author, menu } = SiteMetaData()
   return (
-    <div className="w-full md:w-4/12 px-10 pb-10 border-b-2 md:border-b-0 md:border-r-2 border-gray-600">
+    <div className="w-full lg:w-5/12 md:w-6/12 px-10 pb-10 border-b-2 md:border-b-0 md:border-r-2 border-gray-600">
       <Author author={author} />
       <div className="">
         <Socials socials={author.contacts} />

@@ -21,10 +21,8 @@ module.exports = {
   ],
   author: {
     name: "Samuel Adewole",
-    jobTitle: "Software engineer, Vezeti",
     photo: "/images/photo2.jpg",
-    bio:
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    bio: "Software engineer | Creator of all things possible | Thinker",
     contacts: {
       email: "samueladewole15@gmail.com",
       facebook: "",

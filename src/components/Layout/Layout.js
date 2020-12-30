@@ -6,13 +6,15 @@ import "./layout.css"
 
 const Layout = ({ title, children }) => {
   return (
-    <div className="py-10 bg-gray-700 text-gray-300 dark:bg-gray-900 m-0 md:flex min-h-screen">
-      <Seo title={title} />
-      <Sidebar />
-      <main className="px-10 layout-body">
-        <h1 className="text-5xl font-semibold md:mt-0 mt-8 mb-8">{title}</h1>
-        {children}
-      </main>
+    <div className="py-10 bg-gray-700 text-gray-300 dark:bg-gray-900 m-0 min-h-screen">
+      <div className="xl:w-9/12 m-auto md:flex">
+        <Seo title={title} />
+        <Sidebar />
+        <main className="px-10 layout-body">
+          <h1 className="md:text-5xl text-3xl md:mt-0 mt-8 mb-8">{title}</h1>
+          {children}
+        </main>
+      </div>
     </div>
   )
 }

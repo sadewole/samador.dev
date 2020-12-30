@@ -61,10 +61,10 @@ module.exports = {
               withWebp: true,
             },
           },
-          // {
-          //   resolve: "gatsby-remark-responsive-iframe",
-          //   options: { wrapperStyle: "margin-bottom: 1.0725rem" },
-          // },
+          {
+            resolve: "gatsby-remark-responsive-iframe",
+            options: { wrapperStyle: "margin-bottom: 1.0725rem" },
+          },
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
@@ -73,6 +73,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-offline`,
     // {
     //   resolve: "gatsby-plugin-remove-serviceworker",
     //   options: {

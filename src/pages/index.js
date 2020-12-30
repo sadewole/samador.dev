@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
               {author.name}
             </h1>
             <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-300">
-              {author.jobTitle}
+              {author.bio}
             </p>
 
             {/** Social links */}

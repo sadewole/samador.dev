@@ -4,35 +4,32 @@ title: About me
 slug: about
 draft: true
 ---
+
 Hi there, 👋
 
 My name is Samuel Adewole. I’m a software engineer. Currently making things happen @[Vezeti](https://vezeti.net).
 
 More...✨
 
-* I’m a friendly person and I also respect people’s views.
-* Not the perfect guy but try to ensure things look better.
-* I’m a community lover and it gives me joy seeing people grow.
-* I love learning and try as much as possible to do the thing that makes me better than yesterday.
-* And yeah, I love watching movies😉. It's more like the best way I entertain myself.
-
-
+- I’m a friendly person and I also respect people’s views.
+- Not the perfect guy but try to ensure things look better.
+- I’m a community lover and it gives me joy seeing people grow.
+- I love learning and try as much as possible to do the thing that makes me better than yesterday.
+- And yeah, I love watching movies😉. It's more like the best way I entertain myself.
 
 ## Skills
 
-* Leadership
-* Communication
-* Team spirit
-* Organizing dev-community events
-* React
-* Vue
-* Python
-* Javascript
-* Django (familiar knowledge)
-* Nodejs
-* Docker
-
-
+- Leadership
+- Communication
+- Team spirit
+- Organizing dev-community events
+- React
+- Vue
+- Python
+- Javascript
+- Django (familiar knowledge)
+- Nodejs
+- Docker
 
 ## Volunteers
 

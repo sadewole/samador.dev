@@ -1,9 +1,15 @@
 ---
 layout: blog
 title: Building an Auto Logout Session Timeout with React using hooks.
+slug: building-an-auto-logout-session-timeout-with-react-using-hooks
 date: 2021-01-08T18:03:05.333Z
+tags:
+  - "React"
+  - "Programming"
+  - "Javascript"
+  - "Web development"
+  - "React hook"
 ---
-4 min read
 
 ![Clock image](/media/pexels-brett-sayles-937512.jpg "Picture: <https://www.pexels.com/photo/close-up-photo-of-street-clock-near-tall-building-937512/>")
 
@@ -17,7 +23,7 @@ In this tutorial, we’re going to build the frontend using react and its hooks.
 
 Before we continue, please note that this tutorial assumes you have a basic understanding of react and react hooks. If not, kindly find available resources that’ll guide you through and come back here.
 
-First, Let’s start by creating a javascript file in your component folder e.g *SessionTimeout.js*
+First, Let’s start by creating a javascript file in your component folder e.g _SessionTimeout.js_
 
 To make things faster for us, let’s import all the things we need for the tutorial. You’ll need to install [moment](https://momentjs.com/).
 
@@ -32,14 +38,14 @@ import React, {
   useCallback,
   useRef,
   Fragment,
-} from 'react';
-import moment from 'moment';
+} from "react"
+import moment from "moment"
 
-const SessionTimeout =()=> {
-  return <Fragment />;
-};
+const SessionTimeout = () => {
+  return <Fragment />
+}
 
-export default SessionTimeout;
+export default SessionTimeout
 ```
 
 `useState:` accepts the initial value of the state item and returns an array containing the state variable, and the function you call to alter the state.
@@ -97,13 +103,11 @@ In our `useEffect` hook, we then pass the function in our **window.addEventListe
 
 Next, let’s also write a setTimeout function that checks for our stored **timeStamp.**
 
-
-
 ```javascript
 const SessionTimeout = () => {
   const [events, setEvents] = useState(['click', 'load', 'scroll']);
   const [second, setSecond] = useState(0);
-  
+
   let timeStamp;
   let warningInactiveInterval = useRef();
   let startTimerInterval = useRef();
@@ -117,49 +121,45 @@ const SessionTimeout = () => {
   };
 ```
 
-
-
 `timeChecker:` We use this function to initialize the timer. The **setTimeout** method sets a timer that executes a function once the timer expires at 1 minute. We get the stored timeStamp from sessionStorage which is then sent to our warning function. We’ll look at the **warningInactive** function in a bit.
 
 Next, let us run the timeChecker function
 
 ```javascript
+let timeStamp
+let warningInactiveInterval = useRef()
+let startTimerInterval = useRef()
 
-  let timeStamp;
-  let warningInactiveInterval = useRef();
-  let startTimerInterval = useRef();
+// start inactive check
+let timeChecker = () => {
+  startTimerInterval.current = setTimeout(() => {
+    let storedTimeStamp = sessionStorage.getItem("lastTimeStamp")
+    warningInactive(storedTimeStamp)
+  }, 60000)
+}
 
-  // start inactive check
-  let timeChecker = () => {
-    startTimerInterval.current = setTimeout(() => {
-      let storedTimeStamp = sessionStorage.getItem('lastTimeStamp');
-      warningInactive(storedTimeStamp);
-    }, 60000);
-  };
+// reset interval timer
+let resetTimer = useCallback(() => {
+  clearTimeout(startTimerInterval.current)
 
-  // reset interval timer
-  let resetTimer = useCallback(() => {
-     clearTimeout(startTimerInterval.current);
+  if (isAuthenticated) {
+    timeStamp = moment()
+    sessionStorage.setItem("lastTimeStamp", timeStamp)
+  } else {
+    sessionStorage.removeItem("lastTimeStamp")
+  }
 
-    if (isAuthenticated) {
-      timeStamp = moment();
-      sessionStorage.setItem('lastTimeStamp', timeStamp);
-    } else {
-      sessionStorage.removeItem('lastTimeStamp');
-    }
-    
-     timeChecker();
-  }, [isAuthenticated]);
+  timeChecker()
+}, [isAuthenticated])
 
-  // Life cycle hook
-  useEffect(() => {
-    events.forEach((event) => {
-      window.addEventListener(event, resetTimer);
-    });
-     // Run the timeChecker
-     timeChecker();
-
-  }, [resetTimer]);
+// Life cycle hook
+useEffect(() => {
+  events.forEach(event => {
+    window.addEventListener(event, resetTimer)
+  })
+  // Run the timeChecker
+  timeChecker()
+}, [resetTimer])
 ```
 
 As you can see, the ideal timer is gradually coming to life. Here are the updates:
@@ -169,48 +169,43 @@ As you can see, the ideal timer is gradually coming to life. Here are the update
 
 Now that we’ve been able to write a time checker, let us write a function that warns the user.
 
-
-
 ```javascript
-let timeStamp;
-let warningInactiveInterval = useRef();
-let startTimerInterval = useRef();
+let timeStamp
+let warningInactiveInterval = useRef()
+let startTimerInterval = useRef()
 
 // start inactive check
 let timeChecker = () => {
   startTimerInterval.current = setTimeout(() => {
-    let storedTimeStamp = sessionStorage.getItem('lastTimeStamp');
-    warningInactive(storedTimeStamp);
-  }, 60000);
-};
+    let storedTimeStamp = sessionStorage.getItem("lastTimeStamp")
+    warningInactive(storedTimeStamp)
+  }, 60000)
+}
 
 // warning timer
-let warningInactive = (timeString) => {
-  clearTimeout(startTimerInterval.current);
+let warningInactive = timeString => {
+  clearTimeout(startTimerInterval.current)
 
   warningInactiveInterval.current = setInterval(() => {
-    const maxTime = 2; // Maximum ideal time given before logout 
-    const popTime = 1; // remaining time (notification) left to logout.
+    const maxTime = 2 // Maximum ideal time given before logout
+    const popTime = 1 // remaining time (notification) left to logout.
 
-    const diff = moment.duration(moment().diff(moment(timeString)));
-    const minPast = diff.minutes();
-    const leftSecond = 60 - diff.seconds();
+    const diff = moment.duration(moment().diff(moment(timeString)))
+    const minPast = diff.minutes()
+    const leftSecond = 60 - diff.seconds()
 
     if (minPast === popTime) {
-      setSecond(leftSecond);
+      setSecond(leftSecond)
     }
 
     if (minPast === maxTime) {
-      clearInterval(warningInactiveInterval.current);
-      sessionStorage.removeItem('lastTimeStamp');
+      clearInterval(warningInactiveInterval.current)
+      sessionStorage.removeItem("lastTimeStamp")
       // your logout function here
     }
-  }, 1000);
-};
-
+  }, 1000)
+}
 ```
-
-
 
 Okay, don’t be scared. I know this is a bunch of code. I’ll explain everything.
 
@@ -234,32 +229,30 @@ Lastly, let us go back to our resetTimer function and do some cleanups.
 ```javascript
 // reset interval timer
 let resetTimer = useCallback(() => {
-  clearTimeout(startTimerInterval.current);
-  clearInterval(warningInactiveInterval.current);
+  clearTimeout(startTimerInterval.current)
+  clearInterval(warningInactiveInterval.current)
 
   if (isAuthenticated) {
-    timeStamp = moment();
-    sessionStorage.setItem('lastTimeStamp', timeStamp);
+    timeStamp = moment()
+    sessionStorage.setItem("lastTimeStamp", timeStamp)
   } else {
-    clearInterval(warningInactiveInterval.current);
-    sessionStorage.removeItem('lastTimeStamp');
+    clearInterval(warningInactiveInterval.current)
+    sessionStorage.removeItem("lastTimeStamp")
   }
-  timeChecker();
-}, [isAuthenticated]);
-
+  timeChecker()
+}, [isAuthenticated])
 
 useEffect(() => {
-  events.forEach((event) => {
-    window.addEventListener(event, resetTimer);
-  });
+  events.forEach(event => {
+    window.addEventListener(event, resetTimer)
+  })
 
-  timeChecker();
+  timeChecker()
 
   return () => {
-    clearTimeout(startTimerInterval.current);
-  };
-}, [resetTimer, events, timeChecker]);
-
+    clearTimeout(startTimerInterval.current)
+  }
+}, [resetTimer, events, timeChecker])
 ```
 
 Here are a few things we did:

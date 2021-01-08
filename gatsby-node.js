@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Posts and pages from markdown
   const result = await graphql(`
     {
-      allMarkdownRemark(filter: { frontmatter: { draft: { eq: true } } }) {
+      allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
         nodes {
           frontmatter {
             slug
@@ -34,11 +34,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: { slug: node.frontmatter.slug },
       })
     } else if (node.frontmatter.layout === "blog") {
-      createPage({
-        path: node.frontmatter.slug,
-        component: path.resolve("./src/templates/blog-template.js"),
-        context: { slug: node.frontmatter.slug },
-      })
+      // createPage({
+      //   path: node.frontmatter.slug,
+      //   component: path.resolve("./src/templates/blog-template.js"),
+      //   context: { slug: node.frontmatter.slug },
+      // })
     }
   })
 }

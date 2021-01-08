@@ -15,7 +15,7 @@ const Author = ({ author }) => {
       </Link>
       <div></div>
       <h2 className="text-2xl mb-2 leading-normal font-semibold text-white">
-        <Link className="" to="/">
+        <Link className="" to="/" data-testid="author">
           {author.name}
         </Link>
       </h2>

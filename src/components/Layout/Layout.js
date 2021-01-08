@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Seo from "../seo"
+import Seo from "../Seo"
 import Sidebar from "../Sidebar"
 import "./layout.css"
 

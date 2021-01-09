@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import { Page } from "../components/Views"
 import Feeds from "../components/Feeds"
 
 const AllBlogTemplate = ({ data }) => {
@@ -8,15 +9,17 @@ const AllBlogTemplate = ({ data }) => {
 
   return (
     <Layout title="Blogs">
-      {posts.length === 0 ? (
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      ) : (
-        <Feeds posts={posts} />
-      )}
+      <Page title="Blogs">
+        {posts.length === 0 ? (
+          <p>
+            No blog posts found. Add markdown posts to "content/blog" (or the
+            directory you specified for the "gatsby-source-filesystem" plugin in
+            gatsby-config.js).
+          </p>
+        ) : (
+          <Feeds posts={posts} />
+        )}
+      </Page>
     </Layout>
   )
 }

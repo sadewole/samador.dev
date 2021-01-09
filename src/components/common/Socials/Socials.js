@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { getContact, getIcon } from "../../utils"
+import { getContact, getIcon } from "../../../utils"
 
 const Socials = ({ socials }) => {
   return (

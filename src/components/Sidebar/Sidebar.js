@@ -1,7 +1,7 @@
 import React from "react"
 import { SiteMetaData } from "../../hooks"
-import Menu from "../Menu"
-import Socials from "../Socials"
+import Menu from "../common/Menu"
+import Socials from "../common/Socials"
 import ToggleTheme from "../toggle"
 import Author from "./Author"
 

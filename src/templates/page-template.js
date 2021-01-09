@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import { Page } from "../components/Views"
 
 const PageTemplate = ({ data }) => {
   const {
@@ -9,7 +10,9 @@ const PageTemplate = ({ data }) => {
   } = data.markdownRemark
   return (
     <Layout title={pageTitle}>
-      <div dangerouslySetInnerHTML={{ __html: pageBody }} />
+      <Page title={pageTitle}>
+        <div dangerouslySetInnerHTML={{ __html: pageBody }} />
+      </Page>
     </Layout>
   )
 }

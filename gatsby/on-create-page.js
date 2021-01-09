@@ -34,11 +34,11 @@ const createPages = async ({ graphql, actions, reporter }) => {
         context: { slug: node.frontmatter.slug },
       })
     } else if (node.frontmatter.layout === "blog") {
-      // createPage({
-      //   path: node.frontmatter.slug,
-      //   component: path.resolve("./src/templates/blog-template.js"),
-      //   context: { slug: node.frontmatter.slug },
-      // })
+      createPage({
+        path: node.frontmatter.slug,
+        component: path.resolve("./src/templates/blog-template.js"),
+        context: { slug: node.frontmatter.slug },
+      })
     }
   })
 

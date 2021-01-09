@@ -5,7 +5,7 @@ import "./layout.css"
 
 const Layout = ({ title, children }) => {
   return (
-    <div className="py-10 bg-gray-700 text-gray-300 dark:bg-gray-900 m-0 min-h-screen overflow-x-hidden">
+    <div className="p-10 bg-gray-700 text-gray-300 dark:bg-gray-900 m-0 min-h-screen overflow-x-hidden">
       <Seo title={title} />
       <div className="xl:w-9/12 m-auto">{children}</div>
     </div>

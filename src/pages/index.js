@@ -2,10 +2,10 @@ import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 // components imports
 import Image from "../components/HeroImage"
-import SEO from "../components/Seo"
+import SEO from "../components/common/Seo"
 import ToggleTheme from "../components/toggle"
-import Menu from "../components/Menu"
-import Socials from "../components/Socials"
+import Menu from "../components/common/Menu"
+import Socials from "../components/common/Socials"
 
 import { SiteMetaData } from "../hooks"
 

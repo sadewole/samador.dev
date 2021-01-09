@@ -35,7 +35,7 @@ const createPages = async ({ graphql, actions, reporter }) => {
       })
     } else if (node.frontmatter.layout === "blog") {
       createPage({
-        path: node.frontmatter.slug,
+        path: `/blogs/${node.frontmatter.slug}`,
         component: path.resolve("./src/templates/blog-template.js"),
         context: { slug: node.frontmatter.slug },
       })

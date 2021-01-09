@@ -1,0 +1,11 @@
+.feed-time {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.feed-title {
+  font-size: 27px;
+  margin-bottom: var(--spacing-2) !important;
+}

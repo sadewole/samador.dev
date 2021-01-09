@@ -1,0 +1,22 @@
+.sidebar:after {
+  background: var(--color-text-light);
+  background: linear-gradient(
+    to bottom,
+    var(--color-text-light) 0%,
+    var(--color-text-light) 100%,
+    #fff 40%
+  );
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 540px;
+  top: 30px;
+  right: -10px;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar:after {
+    display: none;
+  }
+}

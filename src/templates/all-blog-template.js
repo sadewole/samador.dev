@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import Feeds from "../components/Feeds"
 
 const AllBlogTemplate = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (
-    <Layout>
+    <Layout title="Blogs">
       {posts.length === 0 ? (
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the

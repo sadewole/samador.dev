@@ -37,6 +37,6 @@ More...✨
 | Community                                                       | Position   | Year              |
 | --------------------------------------------------------------- | ---------- | ----------------- |
 | Developer Student Clubs, Yabatech                               | Lead       | 08/2019 - 07/2020 |
-| National Association of Computer Engineering Students, Yabatech | PRO        | 02/2019 - 10/2019 |
+| National Association of Computer Engineering Students, Yabatech | P.R.O        | 02/2019 - 10/2019 |
 | Developer Circles with Facebook, Lagos                          | Ambassador | 09/2019 - 11/2019 |
 | Build for SDG (by Andela Learning Community, ALC)               | Mentor     | 04/2020 - 07/2020 |

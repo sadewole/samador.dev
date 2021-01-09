@@ -5,7 +5,7 @@ module.exports = {
   description:
     "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
   copyright: "© All rights reserved.",
-  postsPerPage: 5,
+  postsPerPage: 4,
   menu: [
     {
       label: "Home",
@@ -23,7 +23,7 @@ module.exports = {
   author: {
     name: "Samuel Adewole",
     photo: "/images/photo2.jpg",
-    bio: "Software engineer | Creator of all things possible | Thinker",
+    bio: "Software engineer | Creator of all things possible | Achiever",
     contacts: {
       email: "samueladewole15@gmail.com",
       facebook: "",

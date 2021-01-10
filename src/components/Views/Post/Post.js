@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { SiteMetaData } from "../../../hooks"
 import Content from "./Content"
@@ -24,6 +25,10 @@ const Post = ({ post }) => {
       </footer>
     </main>
   )
+}
+
+Post.propTypes = {
+  post: PropTypes.object.isRequired,
 }
 
 export default Post

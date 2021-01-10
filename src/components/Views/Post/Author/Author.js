@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { withPrefix } from "gatsby"
 import { getContact } from "../../../../utils"
 
@@ -30,6 +31,10 @@ const Author = ({ author }) => {
       </div>
     </div>
   )
+}
+
+Author.propTypes = {
+  author: PropTypes.object,
 }
 
 export default Author

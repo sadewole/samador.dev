@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 const Content = ({ title, body, date }) => {
   return (
@@ -14,6 +15,12 @@ const Content = ({ title, body, date }) => {
       </section>
     </article>
   )
+}
+
+Content.propTypes = {
+  title: PropTypes.string,
+  date: PropTypes.string,
+  body: PropTypes.string,
 }
 
 export default Content

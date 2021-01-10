@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import ToggleTheme from "../../../toggle"
 
@@ -11,6 +12,10 @@ const Header = ({ author }) => {
       <ToggleTheme />
     </nav>
   )
+}
+
+Header.propTypes = {
+  author: PropTypes.object,
 }
 
 export default Header

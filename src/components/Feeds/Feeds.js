@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import "./feeds.css"
@@ -24,5 +25,9 @@ const Feeds = ({ posts }) => (
     ))}
   </div>
 )
+
+Feeds.propTypes = {
+  posts: PropTypes.array,
+}
 
 export default Feeds

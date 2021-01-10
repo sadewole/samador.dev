@@ -7,7 +7,7 @@ const Layout = ({ title, children }) => {
   return (
     <div className="p-10 bg-gray-700 text-gray-300 dark:bg-gray-900 m-0 min-h-screen overflow-x-hidden">
       <Seo title={title} />
-      <div className="max-w-6xl xl:w-9/12 m-auto">{children}</div>
+      <div className="max-w-6xl xl:w-10/12  m-auto">{children}</div>
     </div>
   )
 }

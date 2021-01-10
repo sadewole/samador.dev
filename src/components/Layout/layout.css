@@ -48,6 +48,8 @@
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
   --color-primary: #005b99;
+  --color-secondary: #7fdbff;
+  --color-tertiary: #f7a046;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -243,7 +245,16 @@ table:hover tbody tr:hover {
 /* Link */
 
 .layout-body a {
-  color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+
+.layout-body h1 > a,
+.layout-body h2 > a,
+.layout-body h3 > a,
+.layout-body h4 > a,
+.layout-body h5 > a,
+.layout-body h6 > a {
+  color: var(--color-secondary);
 }
 
 a:hover,

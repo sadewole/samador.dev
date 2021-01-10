@@ -1,10 +1,11 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import { Page } from "../components/Views"
 import Feeds from "../components/Feeds"
+import Pagination from "../components/Pagination"
 
-const AllBlogTemplate = ({ data }) => {
+const AllBlogTemplate = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (
@@ -17,16 +18,21 @@ const AllBlogTemplate = ({ data }) => {
             gatsby-config.js).
           </p>
         ) : (
-          <Feeds posts={posts} />
+          <Fragment>
+            <Feeds posts={posts} />
+            {data.totalCount && <Pagination {...pageContext} />}
+          </Fragment>
         )}
       </Page>
     </Layout>
   )
 }
 
-export const BlogsQuery = graphql`
-  query {
+export const query = graphql`
+  query BlogTemplate($postsLimit: Int!, $postsOffset: Int!) {
     allMarkdownRemark(
+      limit: $postsLimit
+      skip: $postsOffset
       filter: { frontmatter: { layout: { eq: "blog" } } }
       sort: { order: DESC, fields: frontmatter___date }
     ) {

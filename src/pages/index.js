@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 // components imports
 import Image from "../components/HeroImage"
 import SEO from "../components/common/Seo"
-import ToggleTheme from "../components/toggle"
+import ToggleTheme from "../components/common/ToggleTheme"
 import Menu from "../components/common/Menu"
 import Socials from "../components/common/Socials"
 

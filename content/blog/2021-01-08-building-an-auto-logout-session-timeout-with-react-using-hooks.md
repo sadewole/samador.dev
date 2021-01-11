@@ -2,7 +2,7 @@
 layout: blog
 title: Building an Auto Logout Session Timeout with React using hooks.
 slug: building-an-auto-logout-session-timeout-with-react-using-hooks
-date: 2021-01-08T18:03:05.333Z
+date: 2021-01-05T18:03:05.333Z
 tags:
   - "React"
   - "Programming"

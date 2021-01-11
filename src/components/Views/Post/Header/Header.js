@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import ToggleTheme from "../../../toggle"
+import ToggleTheme from "../../../common/ToggleTheme"
 
 const Header = ({ author }) => {
   return (

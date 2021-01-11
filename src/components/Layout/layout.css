@@ -198,6 +198,26 @@ blockquote > ol {
   list-style-position: inside;
 }
 
+figure {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  line-height: var(--spacing-3);
+  margin-top: var(--spacing-1);
+  font-size: var(--fontSize-0);
+  font-style: italic;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.anchor {
+  margin-left: -30px !important;
+  padding-right: 14px !important;
+}
+
 /* Table */
 
 table {

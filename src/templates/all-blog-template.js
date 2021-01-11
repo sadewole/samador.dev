@@ -6,7 +6,7 @@ import Feeds from "../components/Feeds"
 import Pagination from "../components/Pagination"
 
 const AllBlogTemplate = ({ data, pageContext }) => {
-  const posts = data.allMarkdownRemark.nodes
+  const { nodes: posts, totalCount } = data.allMarkdownRemark
 
   return (
     <Layout title="Blogs">
@@ -20,7 +20,7 @@ const AllBlogTemplate = ({ data, pageContext }) => {
         ) : (
           <Fragment>
             <Feeds posts={posts} />
-            {data.totalCount && <Pagination {...pageContext} />}
+            {totalCount > 4 && <Pagination {...pageContext} />}
           </Fragment>
         )}
       </Page>

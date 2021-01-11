@@ -16,6 +16,7 @@ const Pagination = ({
           className={`uppercase hover:text-white font-semibold hover:no-underline ${
             !hasPrevPage && "pointer-events-none text-white"
           }`}
+          activeClassName="no-underline"
         >
           ← prev
         </Link>
@@ -27,6 +28,7 @@ const Pagination = ({
           className={`uppercase hover:text-white font-semibold hover:no-underline ${
             !hasNextPage && "pointer-events-none text-white"
           }`}
+          activeClassName="no-underline"
         >
           → next
         </Link>

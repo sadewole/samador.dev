@@ -33,7 +33,11 @@ module.exports = {
         "210-px": "210px",
         "260-px": "260px",
       },
+      width: {
+        inherit: "inherit",
+      },
       height: {
+        inherit: "inherit",
         "95-px": "95px",
         "70-px": "70px",
         "350-px": "350px",
@@ -54,15 +58,14 @@ module.exports = {
       },
       minWidth: {
         "140-px": "140px",
+        "200-px": "400px",
+        "300-px": "400px",
         "400-px": "400px",
         48: "12rem",
       },
       backgroundSize: {
         full: "100$",
       },
-      // transform: {
-      //   "scale-2": "scale(1.2)",
-      // },
     },
   },
   variants: {

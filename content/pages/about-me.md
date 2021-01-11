@@ -19,7 +19,7 @@ More...✨
 - And yeah, I love listening to music😉. It's more like the best way I entertain myself.
 - Lastly, my nickname is **Samador**. It’s actually a combination of my names.😇
 
-## Skills
+## Skills / technologies
 
 - Leadership
 - Communication

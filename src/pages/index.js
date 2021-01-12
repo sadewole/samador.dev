@@ -2,10 +2,10 @@ import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 // components imports
 import Image from "../components/HeroImage"
-import SEO from "../components/seo"
-import ToggleTheme from "../components/toggle"
-import Menu from "../components/Menu"
-import Socials from "../components/Socials"
+import SEO from "../components/common/Seo"
+import ToggleTheme from "../components/common/ToggleTheme"
+import Menu from "../components/common/Menu"
+import Socials from "../components/common/Socials"
 
 import { SiteMetaData } from "../hooks"
 
@@ -42,7 +42,10 @@ const IndexPage = ({ data }) => {
                 ⛷️
               </span>
             </h3>
-            <h1 className="md:text-5xl text-3xl mb-2 leading-normal font-semibold text-white">
+            <h1
+              className="md:text-5xl text-3xl mb-2 leading-normal font-semibold text-white"
+              data-testid="author"
+            >
               {author.name}
             </h1>
             <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-300">

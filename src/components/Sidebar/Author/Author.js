@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { withPrefix, Link } from "gatsby"
 
 const Author = ({ author }) => {
@@ -15,7 +16,7 @@ const Author = ({ author }) => {
       </Link>
       <div></div>
       <h2 className="text-2xl mb-2 leading-normal font-semibold text-white">
-        <Link className="" to="/">
+        <Link className="" to="/" data-testid="author">
           {author.name}
         </Link>
       </h2>
@@ -24,6 +25,10 @@ const Author = ({ author }) => {
       </p>
     </div>
   )
+}
+
+Author.propTypes = {
+  author: PropTypes.object,
 }
 
 export default Author

@@ -1,21 +1,25 @@
 import React from "react"
 import { SiteMetaData } from "../../hooks"
-import Menu from "../Menu"
-import Socials from "../Socials"
-import ToggleTheme from "../toggle"
+import Menu from "../common/Menu"
+import Socials from "../common/Socials"
+import ToggleTheme from "../common/ToggleTheme"
 import Author from "./Author"
+
+import "./sidebar.css"
 
 const Sidebar = () => {
   const { author, menu } = SiteMetaData()
   return (
-    <div className="w-full lg:w-5/12 md:w-6/12 px-10 pb-10 border-b-2 md:border-b-0 md:border-r-2 border-gray-600">
-      <Author author={author} />
-      <div className="">
-        <Socials socials={author.contacts} />
-        <ToggleTheme />
-        <Menu menu={menu} />
+    <aside className="w-full md:w-5/12 px-10 pb-10 relative">
+      <div className="sidebar lg:fixed">
+        <Author author={author} />
+        <div className="">
+          <Socials socials={author.contacts} />
+          <ToggleTheme />
+          <Menu menu={menu} />
+        </div>
       </div>
-    </div>
+    </aside>
   )
 }
 

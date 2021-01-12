@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Author render correctly 1`] = `
+<div
+  className="mb-4"
+>
+  <a
+    href="/"
+  >
+    <img
+      alt="Samuel Adewole"
+      className="rounded transform hover:scale-105"
+      height="85"
+      src="/photo.jpg"
+      width="85"
+    />
+  </a>
+  <div />
+  <h2
+    className="text-2xl mb-2 leading-normal font-semibold text-white"
+  >
+    <a
+      className=""
+      data-testid="author"
+      href="/"
+    >
+      Samuel Adewole
+    </a>
+  </h2>
+  <p
+    className="text-sm font-light leading-relaxed mt-0 mb-4 text-gray-300"
+  >
+    test
+  </p>
+</div>
+`;

@@ -21,13 +21,20 @@ module.exports = {
         path: `${__dirname}/static/images/`,
       },
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: `${__dirname}/static/media`,
-    //     name: "media",
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/media`,
+        name: "media",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: "blogs",
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -80,7 +87,7 @@ module.exports = {
         develop: true, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
         // whitelist: ['whitelist'], // Don't remove this selector
-        ignore: ["/ignored.css", "prismjs/", "/index.css"], // Ignore files/folders
+        ignore: ["/ignored.css", "prismjs/", "/index.css", "components/"], // Ignore files/folders
         purgeOnly: ["/tailwind.css"], // Purge only these files/folders
       },
     },

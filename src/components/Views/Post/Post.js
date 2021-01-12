@@ -12,7 +12,7 @@ const Post = ({ post }) => {
   const { title, date, tags } = post.frontmatter
 
   return (
-    <main className="max-w-3xl m-auto layout-body">
+    <main className="max-w-3xl m-auto layout-body px-10">
       <Header author={author} />
       <Content title={title} date={date} body={post.html} />
       <footer>

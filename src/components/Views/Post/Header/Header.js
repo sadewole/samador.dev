@@ -6,7 +6,7 @@ import ToggleTheme from "../../../common/ToggleTheme"
 const Header = ({ author }) => {
   return (
     <nav className="mb-5 flex items-center justify-between">
-      <h3 data-testid="blog-nav">
+      <h3 data-testid="blog-nav" className="mb-12">
         <Link to="/blogs">{author.name}'s blog</Link>
       </h3>
       <ToggleTheme />

@@ -8,7 +8,7 @@ const Tags = ({ tags }) => {
         {tags &&
           tags.map((tag, index) => (
             <li
-              className="text-white hover:border-gray-600 border-white border p-3 mr-2 text-center inline-flex items-center justify-center h-10 mb-6 shadow-lg rounded-full hover:bg-white hover:text-gray-600 cursor-pointer"
+              className="hover:text-gray-600  text-white hover:border-gray-600 border-white border p-3 mr-2 text-center inline-flex items-center justify-center h-10 mb-6 shadow-lg rounded-full hover:bg-white cursor-pointer"
               key={index}
             >
               {tag}

@@ -3,7 +3,7 @@ module.exports = {
   pathPrefix: "/",
   title: "Samador",
   description:
-    "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
+    "My personal portfolio. This project is built along with blog for sharing my thoughts.",
   copyright: "© All rights reserved.",
   postsPerPage: 4,
   menu: [

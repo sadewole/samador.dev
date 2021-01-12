@@ -2,15 +2,14 @@
 
 My personal portfolio.
 
-This project is also a mix reality of different architecture from [gatsby starter](https://www.gatsbyjs.com/starters/).
+This project is also a mix reality of different architecture from [gatsby starter pack](https://www.gatsbyjs.com/starters/).
 
 ## Build stack
 
 - [Gatsby](https://www.gatsbyjs.org/)
 - [Tailwind](https://tailwindcss.com/)
 - [Netlify CMS](https://www.netlifycms.org/)
-- [Deploy to netlify](https://netlify.com/)
-  <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
+- <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
 
 ## Quick start
 
@@ -30,4 +29,4 @@ npm start
 
 MIT License
 
-Copyright (c) 2020 Samador
+Copyright (c) 2021 Samador

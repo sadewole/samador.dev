@@ -52,7 +52,7 @@ Here are some of my personal projects...
 <div class="lg:flex items-center mb-10">
     <div class="w-full lg:w-5/12 lg:mx-10 order-2">
         <h4><a href="https://event-rock-v2.herokuapp.com/" target="_blank">Event Rock</a></h4>
-        <p>A fullstack event management application that allows user to create, register and search for event.</p>
+        <p>An event management application that allows user to create, register and search for event.</p>
        <p> Utilized: Vue, NestJS, Nodejs, Vuetify, MongoDB</p>
        <small class="italic"><a href="https://event-rock-v2.herokuapp.com/" target="_blank">visit website</a></small>
     </div>
@@ -64,7 +64,7 @@ Here are some of my personal projects...
 
 <div class="lg:flex items-center mb-10">
     <div class="w-full lg:w-5/12 lg:mx-10">
-        <h4><a href="https://hypothesizer.netlify.app/" target="_blank">Hypothesizer</a></h4>
+        <h4><a href="https://hypothesizer.netlify.app/" target="_blank">The Hypothesizer</a></h4>
         <p>The hypothesizer is a guessing game which helps determine how familiar a user understands the meaning of words.</p>
        <p> Utilized: PWA, Javascript, SASS and HTML</p>
        <small class="italic"><a href="https://hypothesizer.netlify.app/" target="_blank">visit website</a></small>

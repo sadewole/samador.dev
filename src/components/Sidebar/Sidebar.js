@@ -10,8 +10,8 @@ import "./sidebar.css"
 const Sidebar = () => {
   const { author, menu } = SiteMetaData()
   return (
-    <aside className="w-full min-w-300-px md:w-5/12 px-10 pb-10 relative">
-      <div className="sidebar">
+    <aside className="w-full md:w-5/12 px-10 pb-10 relative">
+      <div className="sidebar lg:fixed">
         <Author author={author} />
         <div className="">
           <Socials socials={author.contacts} />

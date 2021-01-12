@@ -6,7 +6,7 @@ const Page = ({ title, children }) => {
   return (
     <div className="md:flex">
       <Sidebar />
-      <main className="px-10 layout-body">
+      <main className="px-10 layout-body w-full md:w-7/12">
         <header>
           <h1 className="md:text-5xl text-3xl md:mt-0 mt-8 mb-8">{title}</h1>
         </header>

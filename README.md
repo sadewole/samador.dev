@@ -9,6 +9,7 @@ This project is also a mix reality of different architecture from [gatsby starte
 - [Gatsby](https://www.gatsbyjs.org/)
 - [Tailwind](https://tailwindcss.com/)
 - [Netlify CMS](https://www.netlifycms.org/)
+- [Jest](https://jestjs.io/)
 
 and <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
 

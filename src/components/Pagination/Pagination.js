@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 const Pagination = ({
@@ -35,6 +36,13 @@ const Pagination = ({
       </h2>
     </div>
   )
+}
+
+Pagination.propTypes = {
+  nextPagePath: PropTypes.string,
+  prevPagePath: PropTypes.string,
+  hasPrevPage: PropTypes.bool.isRequired,
+  hasNextPage: PropTypes.bool.isRequired,
 }
 
 export default Pagination

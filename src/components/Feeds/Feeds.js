@@ -27,7 +27,7 @@ const Feeds = ({ posts }) => (
 )
 
 Feeds.propTypes = {
-  posts: PropTypes.array,
+  posts: PropTypes.array.isRequired,
 }
 
 export default Feeds

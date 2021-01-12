@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Author render correctly 1`] = `
+<div
+  className="my-5 flex items-center"
+>
+  <img
+    alt="test name"
+    className="rounded mr-3"
+    height="60"
+    src="/photo.jpg"
+    width="60"
+  />
+  <div>
+    <p>
+      Written by
+       
+      <a
+        className=""
+        href="https://www.twitter.com/test twitter"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <strong>
+          test name
+        </strong>
+      </a>
+       
+    </p>
+    <p
+      className="text-sm font-light leading-relaxed mt-0 mb-4 text-gray-300"
+    >
+      test
+      .
+    </p>
+  </div>
+</div>
+`;

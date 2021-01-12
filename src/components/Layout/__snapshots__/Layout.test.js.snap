@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout render correctly 1`] = `
+<div
+  className="py-10 sm:px-10 bg-gray-700 text-gray-300 dark:bg-gray-900 m-0 min-h-screen overflow-x-hidden"
+>
+  <div
+    className="max-w-6xl xl:w-10/12  m-auto"
+  >
+    test
+  </div>
+</div>
+`;

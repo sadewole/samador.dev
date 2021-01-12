@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination render correctly 1`] = `
+<div
+  className="my-10 flex items-center justify-between"
+>
+  <h2>
+    <a
+      className="uppercase hover:text-white font-semibold hover:no-underline pointer-events-none text-white"
+      href="/blogs"
+      rel="prev"
+    >
+      ← prev
+    </a>
+  </h2>
+  <h2>
+    <a
+      className="uppercase hover:text-white font-semibold hover:no-underline pointer-events-none text-white"
+      href="/blogs"
+      rel="next"
+    >
+      → next
+    </a>
+  </h2>
+</div>
+`;

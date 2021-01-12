@@ -6,7 +6,7 @@ const Content = ({ title, body, date }) => {
     <article className="mb-15">
       <header className="mb-10">
         <h1>{title}</h1>
-        <time className="italic" dateTime={date}>
+        <time className="italic" dateTime={date} data-testid="publish">
           Published on {date}
         </time>
       </header>

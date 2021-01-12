@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feeds render correctly 1`] = `
+<div
+  className="feed"
+>
+  <article
+    className="feed-item"
+  >
+    <div
+      className="feed-meta mb-5"
+    >
+      <h2
+        className="feed-title"
+      >
+        <a
+          className="feed-link"
+          href="test slug"
+        >
+          test title
+        </a>
+      </h2>
+      <time
+        className="feed-time"
+        dateTime="tesst date"
+      >
+        tesst date
+      </time>
+    </div>
+    <section>
+      <p
+        className="feed-description"
+      >
+        test excerpt
+      </p>
+    </section>
+  </article>
+</div>
+`;

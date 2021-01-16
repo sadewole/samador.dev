@@ -12,8 +12,6 @@ tags:
 ---
 ![Dark mode](/media/dark-mode.jpg "Dark mode")
 
-
-
 Dark mode has been a recent feature in almost every technology. And in the release of Tailwind CSS v2.0, dark mode support was released as part of their feature.
 
 While working with gatsby to create my portfolio, I couldn’t find an easy guide. But after so much research, I was able to come up with this solution. And I believe this solution will also help you to easily get things to build up.
@@ -197,8 +195,6 @@ Your project should look like this:
 
 ![Config image with tailwind](/media/gatsby-1.png "Config image with tailwind")
 
-<img alt="Image for post" class="t u v gu aj" src="https://miro.medium.com/max/2548/1\\\*1SGLgTDmaIdKEqeTvrVcGw.png" width="1274" height="696" srcSet="https://miro.medium.com/max/552/1\\\*1SGLgTDmaIdKEqeTvrVcGw.png 276w, https://miro.medium.com/max/1104/1\\\*1SGLgTDmaIdKEqeTvrVcGw.png 552w, https://miro.medium.com/max/1280/1\\\*1SGLgTDmaIdKEqeTvrVcGw.png 640w, https://miro.medium.com/max/1400/1\*1SGLgTDmaIdKEqeTvrVcGw.png 700w" sizes="700px"/>
-
 # **Build dark-mode theme**
 
 Up till now, we’re yet to talk about our generated `tailwind.config.js`. Currently, you should have something like this:
@@ -237,7 +233,7 @@ Next, let us enable dark mode on our project
 **Step 2:** There are two things to do here:
 
 1. Stop the running server with **ctrl + c**
-2. Rebuild the `tailwind.css` file again. This will generate an updated file that includes classes like **.dark\:bg-gray-900**
+2. Rebuild the `tailwind.css` file again. This will generate an updated file that includes classes like **.dark:bg-gray-900**
 
 ```
 npm run build:tailwind
@@ -344,13 +340,9 @@ Now, Let’s test our project by running our development server again
 npm run start
 ```
 
-Yeeeaah! ☺️, your project should look like this: ( _please, don’t mind the file compression. )
-
-
+Yeeeaah! ☺️, your project should look like this: ( *please, don’t mind the file compression.* )
 
 ![Final demo](/media/screen-capture-1-.gif "Final demo")
-
-
 
 Since this tutorial only focused on the functionality and not the styling, you can always be creative by making things look better.
 
@@ -361,4 +353,4 @@ I’ve provided links below, if you want to know more about the resources we use
 
 \--
 
-Thank you very much. Don’t forget to clap and do leave a comment for any contribution.
+**You can like and do leave a comment for any contribution to this article on [medium](https://samador9.medium.com/create-a-dark-mode-theme-switch-with-gatsby-and-tailwindcss-d7691f337998). Thank you.**

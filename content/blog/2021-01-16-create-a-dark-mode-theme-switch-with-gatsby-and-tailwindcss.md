@@ -22,13 +22,13 @@ If this is your first time working with gatsby, you should run `npm install -g g
 
 **Step 1:** create a new gatsby project from the default starter
 
-```
+```javascript
 gatsby new dark-mode && cd dark-mode
 ```
 
 Your folder structure should look like this:
 
-```
+```reg
 - src  
   - components  
     - header.js  
@@ -61,13 +61,13 @@ Your folder structure should look like this:
 
 To install:
 
-```
+```javascript
 npm run tailwindcss
 ```
 
 Run the below command to generate `tailwind.config.js` file
 
-```
+```javascript
 npx tailwindcss init
 ```
 
@@ -75,7 +75,7 @@ npx tailwindcss init
 
 Run the below command to Install:
 
-```
+```javascript
 npm install postcss gatsby-plugin-postcss
 ```
 
@@ -83,7 +83,7 @@ npm install postcss gatsby-plugin-postcss
 
 1. Include the plugin in your `gatsby-config.js` file.
 
-```
+```javascript
 module.exports = {  
     ...  
     plugins: [  
@@ -93,7 +93,7 @@ module.exports = {
 
 2. Create a `postcss.config.js` file in your root directory and add the below in it.
 
-```
+```javascript
 module.exports = () => ({ plugins: [require("tailwindcss")],})
 ```
 
@@ -101,7 +101,7 @@ module.exports = () => ({ plugins: [require("tailwindcss")],})
 
 1. Create a **static** folder in the root directory. In it, create a **styles** folder that contains our CSS file; let’s say `index.css`
 
-```
+```reg
 - src  
 - static  
     - styles  
@@ -110,7 +110,7 @@ module.exports = () => ({ plugins: [require("tailwindcss")],})
 
 2. Include the below tailwind directives in your `index.css` file.
 
-```
+```css
 @tailwind base;
 
 @tailwind components;
@@ -122,7 +122,7 @@ module.exports = () => ({ plugins: [require("tailwindcss")],})
 
 1. Include the below script in our `package.json` file. This script will help to generate a fully compiled `tailwind.css` file in the **styles** folder
 
-```
+```jsonld
 "scripts": {  
     ... 
     "build:tailwind": "tailwind build static/styles/index.css -o  static/styles/tailwind.css",
@@ -130,13 +130,13 @@ module.exports = () => ({ plugins: [require("tailwindcss")],})
 
 2. Now, run the below command
 
-```
+```javascript
 npm run build:tailwind
 ```
 
 3. Finally, Include the build CSS file path in `gatsby-browser.js` file
 
-```
+```javascript
 // Import tailwind styles
 
 import "./static/styles/tailwind.css"
@@ -199,7 +199,7 @@ Your project should look like this:
 
 Up till now, we’re yet to talk about our generated `tailwind.config.js`. Currently, you should have something like this:
 
-```
+```javascript
 module.exports = {  
     purge: [],  
     darkMode: false, // or 'media' or 'class'  
@@ -219,7 +219,7 @@ Next, let us enable dark mode on our project
 
 **Step 1:** Update the return statement in `layout.js` to this:
 
-```
+```javascript
 <div className="bg-gray-600 dark:bg-gray-900 text-white">
    <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> 
     <main className="p-10 ">{ children }</main> 
@@ -235,7 +235,7 @@ Next, let us enable dark mode on our project
 1. Stop the running server with **ctrl + c**
 2. Rebuild the `tailwind.css` file again. This will generate an updated file that includes classes like **.dark:bg-gray-900**
 
-```
+```javascript
 npm run build:tailwind
 ```
 
@@ -243,7 +243,7 @@ npm run build:tailwind
 
 To install:
 
-```
+```javascript
 npm install gatsby-plugin-dark-mode
 ```
 
@@ -251,7 +251,7 @@ npm install gatsby-plugin-dark-mode
 
 1. Include the plugin in your `gatsby-config.js` file.
 
-```
+```javascript
 module.exports = {  
     ...  
     plugins: [  
@@ -262,7 +262,7 @@ module.exports = {
 
 2. Create a `themeToggle.js` file in your component folder and include the following in it:
 
-```
+```javascript
 import React from "react"  
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
@@ -289,7 +289,7 @@ At this stage, the dark mode theme (via the `prefers-color-scheme` [CSS media qu
 
 **Step 3:** Import the  `themeToggle.js` file in `layout.js`
 
-```
+```javascript
 import React from "react"  
 import PropTypes from "prop-types"  
 import { useStaticQuery, graphql } from "gatsby"
@@ -336,7 +336,7 @@ If you’re currently at this stage, congratulation to you. We’ve successfully
 
 Now, Let’s test our project by running our development server again
 
-```
+```javascript
 npm run start
 ```
 

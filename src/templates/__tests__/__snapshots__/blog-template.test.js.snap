@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Template render correctly 1`] = `
+<div
+  className="py-10 sm:px-10 bg-gray-700 text-gray-300 dark:bg-gray-900 m-0 min-h-screen overflow-x-hidden"
+>
+  <div
+    className="max-w-6xl xl:w-10/12  m-auto"
+  >
+    <main
+      className="max-w-3xl m-auto layout-body"
+    >
+      <nav
+        className="mb-5 flex items-center justify-between"
+      >
+        <h3
+          data-testid="blog-nav"
+        >
+          <a
+            href="/blogs"
+          >
+            Test name
+            's blog
+          </a>
+        </h3>
+        <button
+          aria-hidden="true"
+          className={null}
+          onClick={[Function]}
+          style={
+            Object {
+              "MozAppearance": "none",
+              "WebkitAppearance": "none",
+              "appearance": "none",
+              "backgroundColor": "transparent",
+              "border": "none",
+              "cursor": "pointer",
+              "height": "37.599999999999994px",
+              "overflow": "hidden",
+              "padding": 0,
+              "width": "80px",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "132px",
+                "justifyContent": "center",
+                "marginLeft": "-25.6px",
+                "marginTop": "-47.599999999999994px",
+                "width": "132px",
+              }
+            }
+          >
+            <div
+              aria-label="animation"
+              role="button"
+              style={
+                Object {
+                  "height": "100%",
+                  "margin": "0 auto",
+                  "outline": "none",
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+              tabIndex={0}
+              title=""
+            />
+          </div>
+        </button>
+      </nav>
+      <article
+        className="mb-15"
+      >
+        <header
+          className="mb-10"
+        >
+          <h1>
+            test
+          </h1>
+          <time
+            className="italic"
+            data-testid="publish"
+            dateTime="test-date"
+          >
+            Published on 
+            test-date
+          </time>
+        </header>
+        <section>
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p>test</p>",
+              }
+            }
+          />
+        </section>
+      </article>
+      <footer>
+        <div>
+          <ul
+            className="tags"
+          >
+            <li
+              className="text-white hover:border-gray-600 border-white border p-3 mr-2 text-center inline-flex items-center justify-center h-10 mb-6 shadow-lg rounded-full hover:bg-white hover:text-gray-600 cursor-pointer"
+            >
+              test tag
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div
+          className="my-5 flex items-center"
+        >
+          <img
+            alt="Test name"
+            className="rounded mr-3"
+            height="60"
+            src="/test.jpg"
+            width="60"
+          />
+          <div>
+            <p>
+              Written by
+               
+              <a
+                className=""
+                href="https://www.twitter.com/#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <strong>
+                  Test name
+                </strong>
+              </a>
+               
+            </p>
+            <p
+              className="text-sm font-light leading-relaxed mt-0 mb-4 text-gray-300"
+            >
+              Test bio
+              .
+            </p>
+          </div>
+        </div>
+        <a
+          href="/blogs"
+          rel="prev"
+        >
+          ← Read more articles
+        </a>
+      </footer>
+    </main>
+  </div>
+</div>
+`;

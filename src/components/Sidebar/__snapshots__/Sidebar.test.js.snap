@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar  renders correctly 1`] = `
+<aside
+  className="w-full md:w-5/12 px-10 pb-10 relative"
+>
+  <div
+    className="sidebar lg:fixed"
+  >
+    <div
+      className="mb-4"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="Test name"
+          className="rounded transform hover:scale-105"
+          height="85"
+          src="/test.jpg"
+          width="85"
+        />
+      </a>
+      <div />
+      <h2
+        className="text-2xl mb-2 leading-normal font-semibold text-white"
+      >
+        <a
+          className=""
+          data-testid="author"
+          href="/"
+        >
+          Test name
+        </a>
+      </h2>
+      <p
+        className="text-sm font-light leading-relaxed mt-0 mb-4 text-gray-300"
+      >
+        Test bio
+      </p>
+    </div>
+    <div
+      className=""
+    >
+      <ul />
+      <button
+        aria-hidden="true"
+        className={null}
+        onClick={[Function]}
+        style={
+          Object {
+            "MozAppearance": "none",
+            "WebkitAppearance": "none",
+            "appearance": "none",
+            "backgroundColor": "transparent",
+            "border": "none",
+            "cursor": "pointer",
+            "height": "37.599999999999994px",
+            "overflow": "hidden",
+            "padding": 0,
+            "width": "80px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "height": "132px",
+              "justifyContent": "center",
+              "marginLeft": "-25.6px",
+              "marginTop": "-47.599999999999994px",
+              "width": "132px",
+            }
+          }
+        >
+          <div
+            aria-label="animation"
+            role="button"
+            style={
+              Object {
+                "height": "100%",
+                "margin": "0 auto",
+                "outline": "none",
+                "overflow": "hidden",
+                "width": "100%",
+              }
+            }
+            tabIndex={0}
+            title=""
+          />
+        </div>
+      </button>
+      <nav
+        style={
+          Object {
+            "marginTop": "-50px",
+          }
+        }
+      >
+        <ul>
+          <li
+            className="text-gray-300"
+          >
+            -
+             
+            <a
+              className="hover:underline font-light leading-snug mr-2"
+              href="/test/1/"
+            >
+              Test label 1
+            </a>
+          </li>
+          <li
+            className="text-gray-300"
+          >
+            -
+             
+            <a
+              className="hover:underline font-light leading-snug mr-2"
+              href="/test/2/"
+            >
+              Test label 2
+            </a>
+          </li>
+          <li
+            className="text-gray-300"
+          >
+            -
+             
+            <a
+              className="hover:underline font-light leading-snug mr-2"
+              href="/test/3/"
+            >
+              Test label 3
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</aside>
+`;

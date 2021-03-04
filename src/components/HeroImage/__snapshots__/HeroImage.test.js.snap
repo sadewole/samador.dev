@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroImage render correctly 1`] = `
+<div
+  className="bg-gray-800 absolute -top-225-px -right-225-px rounded-full opacity-80 hidden md:block gatsby-image-wrapper"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 200,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 500,
+    }
+  }
+>
+  <picture>
+    <source
+      media="(min-width: 800px)"
+      srcSet="test"
+    />
+    <source
+      srcSet="test"
+    />
+    <img
+      alt=""
+      aria-hidden={true}
+      src="test"
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "objectFit": "cover",
+          "objectPosition": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "top": 0,
+          "transitionDelay": "500ms",
+          "width": "100%",
+        }
+      }
+    />
+  </picture>
+  <picture>
+    <source
+      media="(min-width: 800px)"
+      srcSet="photo1.jpg"
+    />
+    <source
+      srcSet="photo.jpg"
+    />
+    <img
+      alt=""
+      height={200}
+      loading="lazy"
+      onLoad={[Function]}
+      src="photo.jpg"
+      srcSet="photo.jpg"
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "objectFit": "cover",
+          "objectPosition": "center",
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transition": "opacity 500ms",
+          "width": "100%",
+        }
+      }
+      width={500}
+    />
+  </picture>
+  <noscript
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<picture><source media=\\"(min-width: 800px)\\" srcset=\\"photo1.jpg\\" /><source srcset=\\"photo.jpg\\" /><img loading=\\"lazy\\" width=\\"500\\" height=\\"200\\" srcset=\\"photo.jpg\\" src=\\"photo.jpg\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+      }
+    }
+  />
+</div>
+`;

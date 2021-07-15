@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Using Mapbox GL JS, Mapbox Forward Geocoding with React
-slug: Using Mapbox GL JS, Mapbox Forward Geocoding with React
+slug: using-mapbox-gl-js-mapbox-forward-geocoding-with-react
 date: 2021-07-06T11:47:22.254Z
 tags:
   - React

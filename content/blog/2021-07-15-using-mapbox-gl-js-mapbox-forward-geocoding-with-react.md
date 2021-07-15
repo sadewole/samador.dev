@@ -11,7 +11,6 @@ tags:
   - Programming
 ---
 ![](https://miro.medium.com/max/1400/1*NsV6-3NN7XrMAKORfhDhIg.jpeg)
-picture: [https://unsplash.com/photos/yg8Cz-i5U30?utm\_source=unsplash&utm\_medium=referral&utm\_content=creditShareLink](https://unsplash.com/photos/yg8Cz-i5U30?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 I’ve always been a fan of [Mapbox](https://www.mapbox.com/). Maybe because I’ve found most developers using it, I think I love it due to its simplicity and ease of set-up. Besides this, Mapbox provides a powerful way to customize your map, and their documentation is pretty great.
 

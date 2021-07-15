@@ -97,8 +97,6 @@ const GenerateMap = () => {
 export default GenerateMap;
 ```
 
-
-
 We’ve decided to import a few things here. The Mapbox SDK provides us with services for working with geocoding. And don’t worry, the `<React.Fragment/>` will be changed later.
 
 Next, let us initialize the map. This code will run immediately after the page mounts.
@@ -189,7 +187,6 @@ function App() {
 }
 
 export default App;
-
 ```
 
 Here, we import our `GenerateMap.js` into `App.js` . This is to render the map.
@@ -247,7 +244,6 @@ const fetchData = useCallback(() => {
         };
       });
   }, []);
-
 ```
 
 Here, we added the Mapbox geocoding SDK into the React`useCallback` hook. We then passed in `accessToken` option.
@@ -292,7 +288,6 @@ useEffect(() => {
     });
 
   }, [fetchData]);
-
 ```
 
 Here are few things we did:
@@ -347,7 +342,6 @@ You may also notice that we created a new `div` element with `marker` className.
     opacity: 0;
   }
 }
-
 ```
 
 Save your work and go back to the browser page. There is a marker with a ripple effect indicating the position of our new location. You can click the marker to view the description.
@@ -357,8 +351,6 @@ Save your work and go back to the browser page. There is a marker with a ripple 
 You have successfully created a React app that uses Mapbox GL JS and Mapbox forward geocoding. If you’ve followed the tutorial to this point, your final result should look like this:
 
 ![](https://miro.medium.com/max/2000/1*TAmXyIuwt53Rnb908_dxGA.png)
-
-I believe this tutorial has been of help to you. Kindly give it as much clap as you can using the clap button and do leave a comment for any contribution.
 
 The complete code for this tutorial can be found at [https://github.com/sadewole/Mapbox-Reactjs
 ](https://github.com/sadewole/Mapbox-Reactjs)

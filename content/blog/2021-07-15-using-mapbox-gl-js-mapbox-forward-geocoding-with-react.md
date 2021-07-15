@@ -150,4 +150,8 @@ The complete code for this tutorial can be found at [https://github.com/sadewole
 
 
 
-Thank you for reading.
+
+
+\--
+
+**You can like and do leave a comment for any contribution to this article on [medium](https://samador9.medium.com/building-an-auto-logout-session-timeout-with-react-using-hooks-e7804ef973ec#434c-70de593939bb). Thank you for reading.**

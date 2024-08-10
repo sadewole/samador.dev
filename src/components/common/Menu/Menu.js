@@ -9,7 +9,7 @@ const Menu = ({ menu }) => {
     pathname === "/" ? menu.filter(item => item.label !== "Home") : menu
 
   return (
-    <nav style={{ marginTop: "-50px" }}>
+    <nav>
       <ul>
         {links.map((link, index) => (
           <li key={index} className="text-gray-300">
